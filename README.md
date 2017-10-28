@@ -8,43 +8,42 @@ O desafio de codificação passa a ser opcional caso você já possua algum cód
 
 Se você já tem algum código ou projeto existente, faça o seguinte:
 
-- Caso ainda não esteja, suba seu projeto para um repositório git hospedado (por exemplo, Github, Bitbucket, etc.).
-- O repo deve incluir um README que segue os princípios descritos abaixo. Certifique-se de incluir explicações de alto nível sobre o que o código está fazendo.
-- O código que enviar deve ter sido escrito por você sozinho. Caso contrário, diga-nos qual parte você escreveu e por que se orgulha de tê-lo feito (use o README para isso).
+- Caso ainda não esteja, suba seu projeto para um repositório git hospedado (por exemplo, Github, Bitbucket, etc.)
+- O repo deve incluir um README que segue os princípios descritos abaixo. Certifique-se de incluir explicações de alto nível sobre o que o código está fazendo
+- O código que enviar deve ter sido escrito por você sozinho. Caso contrário, diga-nos qual parte você escreveu e por que se orgulha de tê-lo feito (use o README para isso)
 
 #### 🤓 - Como preparo o README?
 
 Independentemente de ser seu próprio código ou estar seguindo o nosso desafio abaixo, escreva seu README como se fosse para um serviço de produção. Inclua os seguintes itens:
 
-- Descrição do problema e da solução.
-- Se a solução se concentra no back-end, front-end ou se é uma pilha cheia.
-- Razões por trás de suas escolhas técnicas, incluindo arquitetônicas.
-- Trocas que você pode ter feito, qualquer coisa que você deixou de fora, ou o que você pode fazer diferente se você gastar mais tempo no projeto.
-- Link para outro código do qual você está particularmente orgulhoso.
-- Link para o seu currículo ou perfil público.
-- Link para o aplicativo hospedado quando aplicável.
+- Descrição do problema e da solução
+- Se a solução se concentra no Backend, Frontend ou é Full Stack
+- Razões por trás de suas escolhas técnicas, incluindo arquitetônicas
+- Trocas que você pode ter feito, qualquer coisa que você deixou de fora, ou o que você pode fazer diferente se você gastar mais tempo no projeto
+- Link para outro código do qual você está particularmente orgulhoso
+- Link para o seu currículo ou perfil público
+- Link para o aplicativo hospedado quando aplicável
 
 
 #### 🤓 - Ok, me fala mais sobre o desafio...
 
-- Forke esse repositório e faça o desafio numa branch com o seu nome (exemplo: nome-sobrenome);
-- O seu objetivo principal é transformar esse mockup em um protótipo funcional HTML/CSS/JS;
-- No seu projeto, crie um diretório chamado src. Todos os arquivos que você criar devem estar dentro desta pasta;
-- Assim que concluir o seu desafio, abra um pull request com suas alterações.
+- Fork esse repositório e faça o desafio numa branch com o seu nome (exemplo: nome-sobrenome)
+- O seu objetivo principal é transformar esse mockup em um protótipo funcional HTML/CSS/JS
+- No seu projeto, crie um diretório chamado src. Todos os arquivos que você criar devem estar dentro desta pasta
+- Assim que concluir o seu desafio, abra um pull request com suas alterações
 
 #### 🤓 - O que vou fazer?
 
 Você irá criar um buscador de telefones. O usuário da ferramenta irá digitar qualquer URL e como resultado será listado qualquer telefone encontrado na página de destino ou nas páginas subsequentes do mesmo domínio.
 
-O desafio consiste em realizar uma das opções abaixo, conforme sua área de interesse.
+O desafio consiste em realizar uma das opções abaixo, conforme a sua área de interesse.
 
 #### 1) Frontend: HTML5/CSS3/JS
 
-- Você deverá utilizar 1 das seguintes tecnologias: React, Vue.js, Angular2+
-- Use as cores definidas no guideline ou tenha um bom motivo para não usa-las
+- Você deverá utilizar 1 das seguintes tecnologias: [React](https://github.com/facebook/react), [Vue.js](https://github.com/vuejs/vue), [Angular2+](https://github.com/angular/angular)
 - As fontes utilizadas são: Source Sans Pro e Source Code Pro
-- A pasta "layout" possui uma imagem de referência para o resultado
-- A pasta "assets" possui as imagens já exportadas
+- A pasta "layout" possui uma imagem de referência para o resultado e a logomarca já exportada para caso precise
+- Use as cores definidas no arquivo cores.png ou tenha um bom motivo para não usa-las
 - Crie um arquivo JSON chamado "data.json" com os dados de exemplo que serão utilizados para renderizar sua aplicação
 - Sua aplicação deverá consultar seu arquivo JSON e responder com os telefones encontrados, simulando a consulta a uma API
 - Sinta-se a vontade para tornar seu projeto responsivo
