@@ -1,10 +1,10 @@
 # developer-challenge
 
-### 🤓  Preciso fazer o desafio?
+#### 🤓 - Preciso fazer o desafio?
 
 O desafio de codificação passa a ser opcional caso você já possua algum código do qual se orgulha e pode compartilhar conosco.
 
-### 🤓  Tenho um projeto, como faço pra mostrar?
+#### 🤓 - Tenho um projeto, como faço pra mostrar?
 
 Se você já tem algum código ou projeto existente, faça o seguinte:
 
@@ -12,7 +12,7 @@ Se você já tem algum código ou projeto existente, faça o seguinte:
 - O repo deve incluir um README que segue os princípios descritos abaixo. Certifique-se de incluir explicações de alto nível sobre o que o código está fazendo.
 - O código que enviar deve ter sido escrito por você sozinho. Caso contrário, diga-nos qual parte você escreveu e por que se orgulha de tê-lo feito (use o README para isso).
 
-### 🤓  Como preparo o README?
+#### 🤓 - Como preparo o README?
 
 Independentemente de ser seu próprio código ou estar seguindo o nosso desafio abaixo, escreva seu README como se fosse para um serviço de produção. Inclua os seguintes itens:
 
@@ -25,14 +25,14 @@ Independentemente de ser seu próprio código ou estar seguindo o nosso desafio 
 - Link para o aplicativo hospedado quando aplicável.
 
 
-### 🤓  Ok, me fala mais sobre o desafio...
+#### 🤓 - Ok, me fala mais sobre o desafio...
 
 - Forke esse repositório e faça o desafio numa branch com o seu nome (exemplo: nome-sobrenome);
 - O seu objetivo principal é transformar esse mockup em um protótipo funcional HTML/CSS/JS;
 - No seu projeto, crie um diretório chamado src. Todos os arquivos que você criar devem estar dentro desta pasta;
 - Assim que concluir o seu desafio, abra um pull request com suas alterações.
 
-### 🤓  O que vou fazer?
+#### 🤓 - O que vou fazer?
 
 Você irá criar um buscador de telefones. O usuário da ferramenta irá digitar qualquer URL e como resultado será listado qualquer telefone encontrado na página de destino ou nas páginas subsequentes do mesmo domínio.
 
@@ -74,7 +74,7 @@ O desafio consiste em realizar uma das opções abaixo, conforme sua área de in
 - Não esqueça do README
 
 
-### 🤓  Entendi! Alguma dica?
+#### 🤓 - Entendi! Alguma dica?
 
 - Seu HTML deverá ser o mais semântico possível (faça bom uso das tags HTML5);
 - Faça o CSS bem estruturado e em um arquivo separado;
@@ -85,6 +85,6 @@ O desafio consiste em realizar uma das opções abaixo, conforme sua área de in
 - Criar interação utilizando JavaScript
 
 
-### Em caso de dúvidas, [abra uma issue](https://github.com/btscp/developer-challenge/issues)
+#### Em caso de dúvidas, [abra uma issue](https://github.com/btscp/developer-challenge/issues)
 
-### Até logo e bom trabalho!
+#### Até logo e bom trabalho!
