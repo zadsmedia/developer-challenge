@@ -28,7 +28,7 @@ Independentemente de ser seu próprio código ou estar seguindo o nosso desafio 
 #### 🤓 - Ok, me fala mais sobre o desafio...
 
 - Fork este repositório e faça o desafio em um branch com o seu nome (exemplo: nome-sobrenome)
-- O seu objetivo principal é transformar esse mockup em um protótipo funcional HTML/CSS/JS
+- O seu objetivo principal é transformar o desafio em um protótipo funcional
 - No seu projeto, crie um diretório chamado src. Todos os arquivos que você criar devem estar dentro desta pasta
 - Assim que concluir o seu desafio, abra um pull request com suas alterações
 
@@ -46,6 +46,7 @@ O desafio consiste em realizar uma das opções abaixo, conforme a sua área de 
 - Use as cores definidas no arquivo cores.png ou tenha um bom motivo para não usa-las
 - Crie um arquivo JSON chamado "data.json" com os dados de exemplo que serão utilizados para renderizar sua aplicação
 - Sua aplicação deverá consultar seu arquivo JSON e responder com os telefones encontrados, simulando a consulta a uma API
+- Faça bom uso das tags HTML5 e CSS3
 - Sinta-se a vontade para tornar seu projeto responsivo
 - Se a sua área é o Frontend, pode pular para [Entendi! Alguma dica?](#--entendi-alguma-dica)
 
@@ -75,9 +76,8 @@ O desafio consiste em realizar uma das opções abaixo, conforme a sua área de 
 
 #### 🤓 - Entendi! Alguma dica?
 
-- Seu HTML deverá ser o mais semântico possível (faça bom uso das tags HTML5)
-- Faça o CSS bem estruturado e em um arquivo separado
-- No JavaScript, evite poluir o escopo global. O uso ou não de bibliotecas também será avaliado
+- Seu código deverá ser o mais semântico possível
+- O uso ou não de bibliotecas também será avaliado
 - Crie uma boa documentação
 - Crie testes para o seu código
 
