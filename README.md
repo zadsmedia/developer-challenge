@@ -48,7 +48,7 @@ O desafio consiste em realizar uma das opções abaixo, conforme sua área de in
 - Crie um arquivo JSON chamado "data.json" com os dados de exemplo que serão utilizados para renderizar sua aplicação
 - Sua aplicação deverá consultar seu arquivo JSON e responder com os telefones encontrados, simulando a consulta a uma API
 - Sinta-se a vontade para tornar seu projeto responsivo
-- Se a sua área é o Frontend, pode pular para [Entendi! Alguma dica?](#entendi-alguma-dica)
+- Se a sua área é o Frontend, pode pular para [Entendi! Alguma dica?](#--entendi-alguma-dica)
 
 #### 2) Backend: Node.js
 
@@ -58,12 +58,12 @@ O desafio consiste em realizar uma das opções abaixo, conforme sua área de in
 - Utilize bons padrões de protocolo e arquitetura web
 - Utilize bons padrões para Javascript
 - Normalize os dados antes de enviar para o cliente
-- Se a sua área é o Backend, pode pular para [Entendi! Alguma dica?](#entendi-alguma-dica)
+- Se a sua área é o Backend, pode pular para [Entendi! Alguma dica?](#--entendi-alguma-dica)
 
 #### 3) Full Stack: SPA + API
 
 - Adivinhou! Basta juntar Frontend e Backend
-- Se a sua área é o desenvolvimento Full Stack, pode pular para [Entendi! Alguma dica?](#entendi-alguma-dica)
+- Se a sua área é o desenvolvimento Full Stack, pode pular para [Entendi! Alguma dica?](#--entendi-alguma-dica)
 
 
 #### 4) Big data e Machine Learning
@@ -85,6 +85,6 @@ O desafio consiste em realizar uma das opções abaixo, conforme sua área de in
 - Criar interação utilizando JavaScript
 
 
-### Em caso de dúvidas, abra uma [issue](https://github.com/btscp/developer-challenge/issues)
+### Em caso de dúvidas, [abra uma issue](https://github.com/btscp/developer-challenge/issues)
 
 ### Até logo e bom trabalho!
