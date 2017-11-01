@@ -34,44 +34,18 @@ Independentemente de ser seu próprio código ou estar seguindo o nosso desafio 
 
 #### 🤓 - O que vou fazer?
 
-Você irá criar um buscador de telefones. O usuário da ferramenta irá digitar qualquer URL e como resultado será listado qualquer telefone encontrado na página de destino ou nas páginas subsequentes do mesmo domínio.
+Você irá criar um buscador de telefones chamado FoneFinder. O usuário da ferramenta irá digitar qualquer URL e como resultado serão listados os telefones encontrados na página de destino ou nas páginas subsequentes do mesmo domínio.
 
 O desafio consiste em realizar uma das opções abaixo, conforme a sua área de interesse.
 
-#### 1) Frontend: HTML5/CSS3/JS
+#### 1) [Desafio para desenvolvedor Frontend: HTML5/CSS3/JS](https://github.com/btscp/developer-challenge/wiki/Desenvolvedor-Frontend)
 
-- Você deverá utilizar 1 das seguintes tecnologias: [React](https://github.com/facebook/react), [Vue.js](https://github.com/vuejs/vue), [Angular2+](https://github.com/angular/angular)
-- As fontes utilizadas são: Source Sans Pro e Source Code Pro
-- A pasta "layout" possui uma imagem de referência para o resultado e a logomarca já exportada para caso precise
-- Use as cores definidas no arquivo cores.png ou tenha um bom motivo para não usa-las
-- Crie um arquivo JSON chamado "data.json" com os dados de exemplo que serão utilizados para renderizar sua aplicação
-- Sua aplicação deverá consultar seu arquivo JSON e responder com os telefones encontrados, simulando a consulta a uma API
-- Faça bom uso das tags HTML5 e CSS3
-- Sinta-se a vontade para tornar seu projeto responsivo
-- Se a sua área é o Frontend, pode pular para [Entendi! Alguma dica?](#--entendi-alguma-dica)
+#### 2) [Desafio para desenvolvedor Backend: Node.js](https://github.com/btscp/developer-challenge/wiki/Desenvolvedor-Backend)
 
-#### 2) Backend: Node.js
-
-- Crie um projeto de API REST com Node.js
-- Exponha um serviço de consulta que receba uma URL e retorne com os telefones encontrados na página de destino ou nas páginas subsequentes do mesmo domínio.
-- Use Node.js 8+ e http://www.nightmarejs.org/ para o crawler
-- Utilize bons padrões de protocolo e arquitetura web
-- Utilize bons padrões para Javascript
-- Normalize os dados antes de enviar para o cliente
-- Se a sua área é o Backend, pode pular para [Entendi! Alguma dica?](#--entendi-alguma-dica)
-
-#### 3) Full Stack: SPA + API
-
-- Adivinhão! Sim... basta juntar Frontend e Backend
-- Se a sua área é o desenvolvimento Full Stack, pode pular para [Entendi! Alguma dica?](#--entendi-alguma-dica)
+#### 3) [Desafio para desenvolvedor Full Stack: SPA + API REST](https://github.com/btscp/developer-challenge/wiki/Desenvolvedor-Full-Stack)
 
 
-#### 4) Big data e Machine Learning
-
-- Quais outras informações podemos encontrar no acesso a uma URL? Nos surpreenda.
-- Sinta-se a vontade para montar sua pilha de tecnologias (Use Node.js, Go, Python, Java... o que quiser!)
-- Crie um Frontend que ajude a visualizar seus objetivos e resultados
-- Não esqueça do README
+#### 4) [Desafio para desenvolvedor Big data e Machine Learning](https://github.com/btscp/developer-challenge/wiki/Desenvolvedor-Big-Data-e-ML)
 
 
 #### 🤓 - Entendi! Alguma dica?
