@@ -20,6 +20,6 @@
 		"Carregar Mais" para aparecer mais itens
 		4. Input Central criando requisição HTTP, para renderizar a lista novamente de acordo 
 		com a url inserida (www.exemplo.com.br/teste.json)
-	- 
+
 #### Currículo:
 - 🤓 https://www.dropbox.com/s/7kq2erac4airhj2/Curr%C3%ADculo-Acau%C3%A3.doc
