@@ -4,12 +4,10 @@ var app = new Vue({
         lista_telefones: [
           { 
             numero: "",
-          quantidade: ""
+            quantidade: ""
           }
         ],
-        sortAsc: false,
-        filterValue: '',
-        somaTel: '0',
+        // filterValue: '',
     },
     mounted() {
       // lista = app.lista_telefones;
@@ -22,7 +20,6 @@ var app = new Vue({
                   this.numero = OBJ.numero;
                   // this.somaTel = this.somaTel + quantidade;
                 })
-                console.log(this.lista_telefones)
                 return this.lista_telefones;
               })
         })
@@ -30,9 +27,54 @@ var app = new Vue({
           alert(error)
         })
     },
+    computed: {
+      timeToLoad() {
+        var t = 0;
+        var start = new Date();
+        // console.log(start);
+        // console.log($('#lista').on('load'));
+        $(window).on('load', function() {
+            t = (new Date() - start)/1000;
+            console.log(t)
+        });
+        // console.log(t);
+        return t;
+      }
+    }
 });
 
+var sort = new Vue({
+  el: '#listener-ordenar',
+    methods : {
+      sort_list: function (event) {
+        // console.log(app.lista_telefones)
+        // console.log(_.orderBy(app.lista_telefones, ['app.lista_telefones.quantidade'], ['desc']));
+        console.log(_.orderBy(app.lista_telefones, ['app.lista_telefones.quantidade'], ['desc']));
+        // return _.orderBy(app.lista_telefones,['app.lista_telefones.quantidade'], ['asc']); 
+      },
+    }
+});
 
+var soma = new Vue({
+  el: '#card-intro',
+  data: {
+    somaTel: "",
+  }, 
+  computed: {
+      somaTelEncontrados: function () {
+        var local = 0;
+        for(i = 0; i < app.lista_telefones.length; i++) {
+          local = local+parseInt(app.lista_telefones[i].quantidade);
+        }
+        this.somaTel = local;
+        return local;
+      },
+      timeLoad: function() {
+        return app.timeToLoad;
+      }
+    },
+    
+});
 
 // Descobre URL Arquivo JSON
 var dataPlace = new Vue({
@@ -69,37 +111,8 @@ var dataPlace = new Vue({
 //   }
 // })
 
-
-
-// var search = new Vue({
-//  el: '#lista',
-//  data: {
-//    filterValue:'',
-//  }
-// });
-
-// var soma = new Vue({
-//  el: '#card-intro',
-//  data: {
-//    somaTel: "",
-//    app_: "",
-//  }, computed: {
-//      somaTelEncontrados() {
-//        app_ = app.lista_telefones;
-//        console.log(app_)
-//        console.log(app_.lista_telefones.lenght);
-//        for (i=0; i< app_.lista_telefones.lenght; i = 1+1) {
-//          console.log(app_.lista_telefones[i].quantidade)
-//        }
-//        // let result = this.lista_telefones;
-//      }
-//     }
-// });
-
-
-
 // var listener_ordenar = new Vue({
-//   el: '#listener-ordenar',
+//   
 //   data: {
 //     vetorQntd = [],
 //     aux = '';
@@ -168,25 +181,3 @@ var dataPlace = new Vue({
 //         });
 //       },
 //     }
-
-var soma = new Vue({
-  el: '#card-intro',
-  data: {
-    somaTel: "",
-  }, 
-  computed: {
-        // a computed getter
-      somaTelEncontrados: function () {
-        var local = 0;
-        // return app.lista_telefones.lenght;
-        console.log(app.lista_telefones[0].quantidade);
-        // console.log(app.lista_telefones.length);
-        for(i = 0; i < app.lista_telefones.length; i++) {
-          local = local+parseInt(app.lista_telefones[i].quantidade);
-        }
-        this.somaTel = local;
-        return local;
-      }
-    },
-    
-});
