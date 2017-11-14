@@ -1,0 +1,418 @@
+/*MARGIN CUSTOM*/
+.margin-top-0 {
+	margin-top: 0px;
+}
+
+.margin-top-10 {
+	margin-top: 10px;
+}
+.margin-top-20 {
+	margin-top: 20px;
+}
+.margin-top-30 {
+	margin-top: 30px;
+}
+.margin-top-40 {
+	margin-top: 40px;
+}
+.margin-top-50 {
+	margin-top: 50px;
+}
+.margin-top-60 {
+	margin-top: 60px;
+}
+.margin-top-70 {
+	margin-top: 70px;
+}
+.margin-top-80 {
+	margin-top: 80px;
+}
+.margin-top-90 {
+	margin-top: 90px;
+}
+.margin-top-100 {
+	margin-top: 100px;
+}
+
+.margin-bottom-0 {
+	margin-bottom: 0px;
+}
+
+.margin-bottom-10 {
+	margin-bottom: 10px;
+}
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+.margin-bottom-30 {
+	margin-bottom: 30px;
+}
+.margin-bottom-40 {
+	margin-bottom: 40px;
+}
+.margin-bottom-50 {
+	margin-bottom: 50px;
+}
+.margin-bottom-60 {
+	margin-bottom: 60px;
+}
+.margin-bottom-70 {
+	margin-bottom: 70px;
+}
+.margin-bottom-80 {
+	margin-bottom: 80px;
+}
+.margin-bottom-90 {
+	margin-bottom: 90px;
+}
+.margin-bottom-100 {
+	margin-bottom: 100px;
+}
+
+.margin-left-0 {
+	margin-left: 0px;
+}
+
+.margin-left-10 {
+	margin-left: 10px;
+}
+.margin-left-20 {
+	margin-left: 20px;
+}
+.margin-left-30 {
+	margin-left: 30px;
+}
+.margin-left-40 {
+	margin-left: 40px;
+}
+.margin-left-50 {
+	margin-left: 50px;
+}
+.margin-left-60 {
+	margin-left: 60px;
+}
+.margin-left-70 {
+	margin-left: 70px;
+}
+.margin-left-80 {
+	margin-left: 80px;
+}
+.margin-left-90 {
+	margin-left: 90px;
+}
+.margin-left-100 {
+	margin-left: 100px;
+}
+
+.margin-right-0 {
+	margin-right: 0px;
+}
+
+.margin-right-10 {
+	margin-right: 10px;
+}
+.margin-right-20 {
+	margin-right: 20px;
+}
+.margin-right-30 {
+	margin-right: 30px;
+}
+.margin-right-40 {
+	margin-right: 40px;
+}
+.margin-right-50 {
+	margin-right: 50px;
+}
+.margin-right-60 {
+	margin-right: 60px;
+}
+.margin-right-70 {
+	margin-right: 70px;
+}
+.margin-right-80 {
+	margin-right: 80px;
+}
+.margin-right-90 {
+	margin-right: 90px;
+}
+.margin-right-100 {
+	margin-bottom: 100px;
+}
+
+/* END MARGIN CUSTOM*/
+
+/* PADDING CUSTOM */
+
+.padding-top-0 {
+	padding-top: 0px;
+}
+
+.padding-top-10 {
+	padding-top: 10px;
+}
+.padding-top-20 {
+	padding-top: 20px;
+}
+.padding-top-30 {
+	padding-top: 30px;
+}
+.padding-top-40 {
+	padding-top: 40px;
+}
+.padding-top-50 {
+	padding-top: 50px;
+}
+.padding-top-60 {
+	padding-top: 60px;
+}
+.padding-top-70 {
+	padding-top: 70px;
+}
+.padding-top-80 {
+	padding-top: 80px;
+}
+.padding-top-90 {
+	padding-top: 90px;
+}
+.padding-top-100 {
+	padding-top: 100px;
+}
+
+
+.padding-bottom-0 {
+	padding-bottom: 0px;
+}
+
+.padding-bottom-10 {
+	padding-bottom: 10px;
+}
+.padding-bottom-20 {
+	padding-bottom: 20px;
+}
+.padding-bottom-30 {
+	padding-bottom: 30px;
+}
+.padding-bottom-40 {
+	padding-bottom: 40px;
+}
+.padding-bottom-50 {
+	padding-bottom: 50px;
+}
+.padding-bottom-60 {
+	padding-bottom: 60px;
+}
+.padding-bottom-70 {
+	padding-bottom: 70px;
+}
+.padding-bottom-80 {
+	padding-bottom: 80px;
+}
+.padding-bottom-90 {
+	padding-bottom: 90px;
+}
+.padding-bottom-100 {
+	padding-bottom: 100px;
+}
+
+.padding-left-0 {
+	padding-left: 0px;
+}
+
+.padding-left-10 {
+	padding-left: 10px;
+}
+.padding-left-20 {
+	padding-left: 20px;
+}
+.padding-left-30 {
+	padding-left: 30px;
+}
+.padding-left-40 {
+	padding-left: 40px;
+}
+.padding-left-50 {
+	padding-left: 50px;
+}
+.padding-left-60 {
+	padding-left: 60px;
+}
+.padding-left-70 {
+	padding-left: 70px;
+}
+.padding-left-80 {
+	padding-left: 80px;
+}
+.padding-left-90 {
+	padding-left: 90px;
+}
+.padding-left-100 {
+	padding-left: 100px;
+}
+
+.padding-right-10 {
+	padding-right: 10px;
+}
+.padding-right-20 {
+	padding-right: 20px!important;
+}
+.padding-right-30 {
+	padding-right: 30px;
+}
+.padding-right-40 {
+	padding-right: 40px;
+}
+.padding-right-50 {
+	padding-right: 50px;
+}
+.padding-right-60 {
+	padding-right: 60px;
+}
+.padding-right-70 {
+	padding-right: 70px;
+}
+.padding-right-80 {
+	padding-right: 80px;
+}
+.padding-right-90 {
+	padding-right: 90px;
+}
+.padding-right-100 {
+	margin-bottom: 100px;
+}
+
+/*END CUSTOM PADDING */
+
+
+.force-center {
+	margin: 0 auto;
+}
+
+.bordas-arredondadas {
+	border-radius: 7px;
+}
+
+.w100 {
+	max-width: 100%;
+}
+
+.italic {
+	font-style: italic;
+}
+
+#site_input {
+	/*text-align: center;*/
+    width: 70%;
+    transition: width .35s ease, background-color .35s ease;
+    padding: 5 5 5 5;
+}
+
+#site_input:focus {
+	width: 100%;
+    transition: width .35s ease, background-color .35s ease;
+    padding: 5 5 5 5;
+}
+
+/*#btn-search-top { 
+	max-width: 85%;
+	transition: width .35s ease, background-color .35s ease;
+	padding: 5 5 5 5;
+}*/
+
+#btn-search-top {
+    background-color: transparent;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+
+
+   -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+}
+
+#btn-search-top:focus {
+    color: white;
+    font-style: italic;
+}
+
+input[type=text]:focus {
+	/*width: 100%;*/
+	/*border-color: #3c763d;*/
+	border-color: #1ED26E;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.cursor-pointer:hover {
+	cursor: pointer;
+}
+
+.container-itens {
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 61px -2px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 61px -2px rgba(0,0,0,1);
+box-shadow: 0px 0px 61px -2px rgba(0,0,0,1);
+}
+
+.item {
+	border: 1px solid #1ED26E;
+	color: black;
+	background-color: #e9ecef;
+}
+
+.jumbotron {
+	background-color: #9b9b9b!important;
+}
+
+.text-intro {
+	color: white;
+	background-color: #595959;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.green {
+	color: #1ED26E!important;
+}
+
+.badge-primary {
+	background-color: #1ED26E;
+}
+
+.lista-telefones {
+	padding: 0 auto;
+}
+ .num-telefone:hover {
+ 	color: #1ED26E;
+ 	cursor: default;
+ }
+
+ .card-body-custom {
+ 	padding: 0px;
+ 	background-color: transparent;
+ 	border: none;
+ }
+.card-header-custom {
+	width: 95%!important;
+	margin: 0 auto;
+}
+ .icons-card-head {
+ 	/*padding: 0.75rem 1.25rem !important;*/
+ }
+
+ .load-more {
+ 	background-color: #1ED26E;
+ 	color: white;
+ 	padding-top: 4px;
+ 	padding-bottom: 4px;
+ 	padding-left: 15px; 
+ 	padding-right: 15px;
+ 	border-radius: 0px;
+ }
+
+ .load-more:hover { 
+ 	background-color: transparent;
+ 	border: 1px solid #1ED26E;
+ 	color: #1ED26E;
+ }
