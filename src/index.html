@@ -45,7 +45,7 @@
 						<div class="form-group margin-top-30">
 							<div class="input-group focus_sucess" id="data_storage">
 							    <span class="input-group-addon"><i class="fa fa-link"></i></span>
-							    <input id="site_input" v-model="url" v-on:click@keyup.enter="getURL" type="text" class="borda-arredondada form-control" name="buscar" placeholder="Digite a URL"/>
+							    <input id="site_input" v-model="url" v-on:click="getURL" type="text" class="borda-arredondada form-control" name="buscar" placeholder="Digite a URL"/>
 							    <div class="btn-search input-group-addon cursor-pointer">
 								    <span v-on:click="getURL">
 								    	<i class="fa fa-arrow-right"></i>
@@ -65,7 +65,7 @@
 							<div class="container margin-bottom-30"> 
 						    	<div class="card text-intro" id="card-intro">
 						    		<p class="italic text-center margin-bottom-10 margin-top-10 padding-right-10 padding-left-10">
-						    			Foram encontrados <span class="bold green">{{somaTelEncontrados}}</span> resultados em <span class="green bold">{{}}</span> segundos.
+						    			Foram encontrados <span class="bold green">{{somaTelEncontrados}}</span> resultados em <span class="green bold">{{timeLoad}}</span> segundos.
 							   		</p>
 							   	</div>
 						    </div>
@@ -80,7 +80,7 @@
 						    <div class="card bg-light lista-telefones force-center">
 							  <div class="card-header justify-content-between">
 								  <div class="card-header-custom" id="listener-ordenar">
-								  	<span v-on:click="invertSort()"><i class="icons-card-head cursor-pointer fa fa-sort-numeric-desc" id="sort_numbers"></i></span>
+								  	<span v-on:click="sort_list"><i class="icons-card-head cursor-pointer fa fa-sort-numeric-desc" id="sort_numbers"></i></span>
 								  	<span class="pull-right"> <i class="icons-card-head fa fa-phone-square padding-right-10"></i>Telefone</span>
 								  </div>
 							  </div>
@@ -112,7 +112,7 @@
 	</body>
 	
 	<!-- <script src="https://unpkg.com/vue@2.5.3/dist/vue.js" defer></script> -->
-	
+	<script src="../lib/Lodash/lodash.js"></script>
 	<script src="../lib/VueJs/vue.js" defer></script>
 	<script src="controller.js" defer></script>
 	<script src="scripts.js" defer></script>
