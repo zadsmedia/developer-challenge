@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'source_sans_pro_SbIt';
+    src: url('sourcesanspro-semiboldit-webfont.woff2') format('woff2'),
+         url('sourcesanspro-semiboldit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans_R';
+    src: url('sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_code_pro_R';
+    src: url('source-code-pro.regular.ttf') format('tff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_code_pro_L';
+    src: url('source-code-pro.light.ttf') format('tff');
+    font-weight: normal;
+    font-style: normal;
+
+}

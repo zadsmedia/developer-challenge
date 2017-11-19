@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <title>Fone Finder</title>
+	  <link rel="stylesheet" type="text/css" href="../lib/bootstrap-4.0.0-beta.2-dist/css/bootstrap.css">
+	  <link rel="stylesheet" type="text/css" href="styles.css">
+	  <link rel="stylesheet" type="text/css" href="../css/fonts/font-styles.css">
+	  <link rel="stylesheet" type="text/css" href="../css/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	  <script src="../lib/JQuery/jquery-3.2.1.min.js"></script>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="icon" type="image/x-icon" href="../css/img/favicon.ico">
+	</head>
+	<body>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		      <a class="navbar-brand green italic" href="#">Fone Finder</a>
+		      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle Navigation">
+		        <span class="navbar-toggler-icon"></span>
+		      </button>
+
+		      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+		        <ul class="navbar-nav mr-auto">
+		          <li class="nav-item active padding-top-10	">
+		            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		          </li>
+		          <!-- <li class="nav-item force-center"> -->
+		            <div class="logo_navbar"><img src="../css/img/logo.png" id="logo_center_navbar" class="img-fluid margin-top-50 w100 d-none d-lg-block" ></div>
+		          <!-- </li> -->
+		       	</ul>
+		        <form class="form-inline my-2 my-lg-0" id="search_filter">
+					<input class="form-control mr-sm-2 pull-right" type="text" id="btn-search-top" v-model="filterValue" placeholder="Pesquisar" aria-label="Search">
+			        <button class="col-xs-4 btn btn-warning my-2 my-sm-0t cursor-pointer"><i class="fa fa-search"></i></button>
+			        <!--V-on click - chama metodo no controller-->
+				</form>
+		      </div>
+		    </nav>
+	    <div class="jumbotron">
+		    
+		    <div class="row">
+			    <div class="col-lg-4 offset-lg-4 text-center">
+			    	<img src="../css/img/logo.png" class="img-fluid margin-top-50 w100" >
+			    </div>
+		    </div>
+		    <div class="row">
+		    <!-- Coluna Container Caixa de URL -->
+			    <div class="col-xs-10 col-md-8 col-lg-4 col-sm-6 offset-sm-3 offset-xs-1 offset-md-2 offset-lg-4">
+				    <form class="input-search-small">
+						<div class="form-group margin-top-30">
+							<div class="input-group focus_sucess" id="data_storage">
+							    <span class="input-group-addon"><i class="fa fa-link"></i></span>
+							    <input id="site_input" v-model="url" type="text" class="borda-arredondada form-control" name="buscar" placeholder="Digite a URL"/>
+							    <div class="btn-search input-group-addon cursor-pointer">
+								    <span v-on:click="getURL">
+								    	<i class="fa fa-arrow-right"></i>
+								    </span>
+								</div>
+							</div>
+						</div>
+					</form>
+			    </div>
+		    </div>
+		    <div class="row margin-top-30">
+		    <!-- Coluna Container Resultados -->
+			    <div class="col-xs-8 offset-xs-2 col-sm-8 offset-sm-2 col-md-10 offset-md-1 col-lg-4 offset-lg-4"> 
+					<div class="container container-itens padding-top-30 padding-bottom-40 bordas-arredondadas ">
+						<!-- Coluna Container Card Intro (X Resultados / X Segundos) -->
+						<div class="col-xs-8 offset-xs-2 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-10 offset-lg-1">
+							<div class="container margin-bottom-30"> 
+						    	<div class="card text-intro" id="card-intro">
+						    		<p class="italic text-center margin-bottom-10 margin-top-10 padding-right-10 padding-left-10">
+						    			Foram encontrados <span class="bold green">{{somaTelEncontrados}}</span> resultados em <span class="green bold">{{timeLoad}}</span> segundos.
+							   		</p>
+							   	</div>
+						    </div>
+							<!-- 
+						    <div id="GetSearchTopo">
+						    	<p>{{message}}</p>
+						    </div> 
+						    -->
+
+					    </div>
+					    <div class="col-xs-8 offset-xs-2 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-10 offset-lg-1">
+						    <div class="card bg-light lista-telefones force-center">
+							  <div class="card-header justify-content-between">
+								  <div class="card-header-custom" id="listener-ordenar">
+								  		<span class="tooltiptext"> Ordenar por Quantidade</span>
+								  		<span v-on:click="sort_list">
+								  			<i class="icons-card-head cursor-pointer fa fa-sort-numeric-asc" id="sort_numbers"></i>
+								  		</span>
+								  	<span class="pull-right"> <i class="icons-card-head fa fa-phone-square padding-right-10"></i>Telefone</span>
+								  </div>
+							  </div>
+							  <div class="card-body card-body-custom" id="lista">
+							    <ul class="list-group text-center w100">
+							    	<li class="list-group-item d-flex justify-content-between align-items-center" v-for="telefone in limitedPhones">
+										<span class="badge badge-primary badge-pill">{{ telefone.quantidade }}</span>
+								    	<span class="text-center num-telefone">{{ telefone.numero }}</span>
+	  								</li>	  
+								</ul>
+							  </div>
+					    </div>
+						<!-- 
+						<div class="hidden-md-up col-xs-10 offset-xs-1">
+							<div class="text-center margin-top-30">
+							   	<a href="#" id="teste"><div class="btn load-more cursor-pointer"><span><i class="fa fa-plus-square"></i></span></div></a>
+							</div>
+						</div> -->
+
+						<div class="hidden-md-down col-md-8 offset-md-2">
+							<div class="text-center margin-top-30" id="ver_mais">
+							   	<div class="btn load-more cursor-pointer" id="btn-ver-mais" v-on:click="show_more"> Carregar Mais </div>	
+							</div>
+						</div>
+			    	</div>
+			    </div>
+			</div>
+		</div>
+	</body>
+	
+	<!-- <script src="https://unpkg.com/vue@2.5.3/dist/vue.js" defer></script> -->
+	<script src="../lib/Lodash/lodash.js"></script>
+	<script src="../lib/VueJs/vue.js" defer></script>
+	<script src="controller.js" defer></script>
+	<script src="scripts.js" defer></script>
+	<script src="../lib/bootstrap-4.0.0-beta.2-dist/js/bootstrap.bundle.min.js" defer></script>
+	<!--defer usado para exec js qnd DOM é carregada, sem atrasar carregamento
+	async é para quando estiver disponível para carregar */ -->
+</html>
