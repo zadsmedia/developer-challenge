@@ -43,4 +43,34 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function () {
+	$(window).scroll(function () {    
+    if ($(this).scrollTop() >= 115) {
+    	$(".logo_navbar").fadeIn();
+    }
+    else{
+    	$(".logo_navbar").fadeOut();
+	}
+	})
+  });
+	
+$(document).ready(function () {
+	$( "#sort_numbers" ).hover(
+	  function() {
+	    $(".tooltiptext").fadeIn();
+	  }, function() {
+	    $(".tooltiptext").fadeOut();
+	  }
+	);
+
+	// $("#sort_numbers").hover(function() {
+	// 	$(".tooltiptext").fadeIn;
+	// 	alert("funfando");
+	// } else {
+	// 	$(".tooltiptext").fadeOut;
+	// }
+	// });
+});
+
+
 //! -------------------- Fim Scripts Jquery -------------------

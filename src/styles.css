@@ -416,3 +416,55 @@ box-shadow: 0px 0px 61px -2px rgba(0,0,0,1);
  	border: 1px solid #1ED26E;
  	color: #1ED26E;
  }
+
+
+#logo_center_navbar {
+    position: absolute;
+    left: 50%;
+    margin-top: -3px !important;  /* 50% of your logo width */
+    margin-left: -115px !important;  /* 50% of your logo width */
+    /*display: none!important;*/
+}
+
+.logo_navbar {
+	display: none;
+}
+
+#sort_numbers {
+    /*position: relative;*/
+    /*display: inline-block;*/
+    /*border-bottom: 1px dotted black;  If you want dots under the hoverable text */
+}
+
+.tooltiptext {
+    display: none;
+    width: 90px;
+    background-color: #2f2f2fad;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding: 0;
+    border-radius: 7px;
+ 	margin-left: -30px;
+ 	margin-top: -50px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+.disabled-btn {
+	cursor: not-allowed;
+	background-color: #1ED26E;
+ 	color: white;
+ 	padding-top: 4px;
+ 	padding-bottom: 4px;
+ 	padding-left: 15px; 
+ 	padding-right: 15px;
+ 	border-radius: 0px;
+}
+
+.disabled-btn:hover {
+	/*background-color: transparent;*/
+ 	border: 1px solid #1ED26E;
+ 	color: white;
+}
