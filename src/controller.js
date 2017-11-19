@@ -7,6 +7,7 @@ var app = new Vue({
             quantidade: ""
           }
         ],
+        limitNumber: 4,
         // filterValue: '',
     },
     mounted() {
@@ -39,18 +40,47 @@ var app = new Vue({
         });
         // console.log(t);
         return t;
+      },
+      limitedPhones: function(){
+        return this.lista_telefones.slice(0, this.limitNumber);
+        // return _.chunk(this.lista_telefones, 4);
+      }
+    },
+    methods: {
+      show_more: function(event) {
+        // return false;
+        // return loadMore.show_more();
       }
     }
+
+
 });
+
+var loadMore = new Vue({
+  el: "#ver_mais",
+  methods: {
+    show_more: function(event) {
+      app.limitNumber += 4;
+      // console.log(app.limitNumber)
+      if (app.limitNumber >= app.lista_telefones.length) {
+        $("#btn-ver-mais").removeClass("cursor-pointer");
+        $("#btn-ver-mais").removeClass("load-more");
+        $("#btn-ver-mais").addClass("disabled-btn");
+      }
+      return app.lista_telefones.slice(0, app.limitNumber);
+    }
+  }
+})
 
 var sort = new Vue({
   el: '#listener-ordenar',
     methods : {
       sort_list: function (event) {
-        // console.log(app.lista_telefones)
-        // console.log(_.orderBy(app.lista_telefones, ['app.lista_telefones.quantidade'], ['desc']));
-        console.log(_.orderBy(app.lista_telefones, ['app.lista_telefones.quantidade'], ['desc']));
-        // return _.orderBy(app.lista_telefones,['app.lista_telefones.quantidade'], ['asc']); 
+        if ($('#sort_numbers').hasClass('fa-sort-numeric-desc')) {
+          app.lista_telefones = (_.orderBy(app.lista_telefones,['quantidade'], ['desc']));
+        } else {
+          app.lista_telefones = (_.orderBy(app.lista_telefones,['quantidade'], ['asc']));
+        }
       },
     }
 });
@@ -92,24 +122,23 @@ var dataPlace = new Vue({
   }
 });
 
-// //! Custom OBJ Para Search Topo 
-// var searchTop = new Vue({
-//   el: '#search_filter',
-//   data: {
-//     filterValue: '',
-//   }
-// });
-
-// var search = new Vue({
-//   el: '#GetSearchTopo',
-//   data: {
-//   },
-//   computed: {
-//     message: function () {
-//       return searchTop.filterValue;
-//     }
-//   }
-// })
+//! Custom OBJ Para Search Topo 
+var searchTop = new Vue({
+  el: '#search_filter',
+  data: {
+    filterValue: '',
+  },
+  computed: {
+    message: function () {
+      var pesquisa = this.filterValue;
+      console.log(pesquisa)
+      // return app.lista_telefones.filter(function (pesquisa) {
+        // return app.lista_telefones.numero === pesquisa;
+      // })
+      
+    }
+  }
+})
 
 // var listener_ordenar = new Vue({
 //   
