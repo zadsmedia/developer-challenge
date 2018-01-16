@@ -1,0 +1,110 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0
+}
+
+
+.input-group-append,
+.input-group-append button {
+    cursor: pointer;
+}
+
+.bg-dark-gray {
+	background-color: #595959;
+}
+
+.font-source-sans-pro {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.font-source-code-pro {
+	font-family: 'Source Code Pro', monospace;
+}
+
+button {
+    background: #FFF;
+    border: none;
+}
+
+input {
+	height: 4em;
+}
+
+input:focus {
+	outline-style: none !important;
+	outline: none !important;
+	outline: 0 !important;
+
+}
+
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#app{
+	margin-top: 10%;
+}
+
+#logo {
+	display: flex;
+    justify-content: center;
+}
+
+#form {
+	margin-top: 30px;
+}
+
+#form input{
+	color: #1ED26E;	
+	font-weight: 700;
+	border: none !important;
+	border-radius: 0px;
+}
+
+#form .input-group-append{
+	background-color: #FFF;
+	padding: 5px 20px 5px 5px;
+}
+
+#result {
+	margin-top: 30px;
+	padding: 30px;
+	margin: 30px 15px 30px 15px;
+}
+
+#result .result-count{
+	color: #9B9B9B;
+	font-style: italic;
+}
+
+#result .result-list{
+	margin-top: 20px;
+}
+
+#result .result-list .occur{
+	color: #9B9B9B;
+	font-size: 1em;
+	align-self: center;
+}
+
+#result .result-list .number{
+	font-size: 2em;
+}
+
+#result .result-list div {
+	display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+#result .result-list div:first-child {
+	color: #1ED26E;
+	font-weight: 700;
+}

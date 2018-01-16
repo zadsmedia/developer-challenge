@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FoneFinder</title>
+	<!-- import das fontes -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
+	<!-- import bootstrap 4 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<!-- import fontawesome -->
+	<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+	<!-- import vue -->
+	<script src="https://unpkg.com/vue"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/default.css"/>
+</head>
+<body class="bg-dark-gray">
+	<div id="app">
+		<div class="container">
+			<div id="logo">
+				<img src="img/logo.png">		
+			</div>
+			<div id="form">
+				<div class="row justify-content-md-center">
+					<div class="col">
+						<form v-on:submit.prevent>
+							<div class="input-group">
+								<input type="text" class="form-control font-source-code-pro" v-model="searchText" v-on:keyup.enter="doSearch(searchText)">
+								<div class="input-group-append" v-on:click="doSearch(searchText)">
+									<button type="button" class="button-default">
+										<i class="fas fa-arrow-right"></i>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<transition name="fade" mode="out-in">
+				<div id="result" class="bg-white" v-if="numbers.length > 0">
+					<div class="row justify-content-md-center">
+						<div class="col-12 result-count font-source-sans-pro">
+							Foram encontrados {{ numbers.length }} resultados em {{ "XXX" }} segundos
+						</div>
+						<div class="col-12 result-list">
+							<div v-for="item in numbers">
+								<span class="occur font-source-sans-pro">{{ item.occur }}x</span>&nbsp;&nbsp;<span class="number font-source-sans-pro">{{ item.number }}</span>
+							</div>
+						</div>
+					</div>				
+				</div>
+			</transition>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
