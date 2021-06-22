@@ -38,14 +38,14 @@ Você irá criar um buscador de telefones chamado FoneFinder. O usuário da ferr
 
 O desafio consiste em realizar uma das opções abaixo, conforme a sua área de interesse.
 
-#### 1) [Desafio para desenvolvedor Frontend: HTML5/CSS3/JS](https://github.com/btscp/developer-challenge/wiki/Desenvolvedor-Frontend)
+#### 1) [Desafio para desenvolvedor Frontend: HTML5/CSS3/JS](https://github.com/zadsmedia/developer-challenge/wiki/Desenvolvedor-Frontend)
 
-#### 2) [Desafio para desenvolvedor Backend: Node.js](https://github.com/btscp/developer-challenge/wiki/Desenvolvedor-Backend)
+#### 2) [Desafio para desenvolvedor Backend: Node.js](https://github.com/zadsmedia/developer-challenge/wiki/Desenvolvedor-Backend)
 
-#### 3) [Desafio para desenvolvedor Full Stack: SPA + API REST](https://github.com/btscp/developer-challenge/wiki/Desenvolvedor-Full-Stack)
+#### 3) [Desafio para desenvolvedor Full Stack: SPA + API REST](https://github.com/zadsmedia/developer-challenge/wiki/Desenvolvedor-Full-Stack)
 
 
-#### 4) [Desafio para desenvolvedor Big data e Machine Learning](https://github.com/btscp/developer-challenge/wiki/Desenvolvedor-Big-Data-e-ML)
+#### 4) [Desafio para desenvolvedor Big data e Machine Learning](https://github.com/zadsmedia/developer-challenge/wiki/Desenvolvedor-Big-Data-e-ML)
 
 
 #### 🤓 - Entendi! Alguma dica?
@@ -56,6 +56,6 @@ O desafio consiste em realizar uma das opções abaixo, conforme a sua área de 
 - Crie testes para o seu código
 
 
-#### Em caso de dúvidas, [abra uma issue](https://github.com/btscp/developer-challenge/issues)
+#### Em caso de dúvidas, [abra uma issue](https://github.com/zadsmedia/developer-challenge/issues)
 
 #### Até logo e bom trabalho!
